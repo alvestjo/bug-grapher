@@ -1,0 +1,27 @@
+{
+  "name": "grapher-boilerplate",
+  "private": true,
+  "scripts": {
+    "start": "meteor run",
+    "deploy:qa": "cd .deploy && mup deploy",
+    "test": "meteor test-packages --driver-package practicalmeteor:mocha packages/grapher",
+    "test-console": "meteor --once test-packages --driver-package dispatch:mocha-phantomjs packages/grapher",
+    "test-console-watch": "TEST_WATCH=1 meteor test-packages --driver-package dispatch:mocha-phantomjs packages/grapher"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.18.0",
+    "bcrypt": "^0.8.7",
+    "bootstrap": "^3.3.7",
+    "faker": "^3.1.0",
+    "meteor-node-stubs": "~0.2.0",
+    "object-sizeof": "^1.1.1",
+    "react": "^15.3.1",
+    "react-ace": "^3.5.0",
+    "react-addons-pure-render-mixin": "^15.3.1",
+    "react-dom": "^15.3.1",
+    "react-js-pagination": "^2.0.0",
+    "react-json-pretty": "^1.2.1",
+    "react-mounter": "^1.2.0",
+    "sift": "^3.2.6"
+  }
+}
